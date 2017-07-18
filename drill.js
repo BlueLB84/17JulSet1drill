@@ -67,4 +67,4 @@ function whoAmI(name, age) {
   }
 };
 
-whoAmI('Lindsey', "twenty nine");
+whoAmI('Lindsey', "thirty two");
