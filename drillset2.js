@@ -93,28 +93,31 @@ switch (month) {
 
 function decode(word) {
     const firstLetter = word[0];
-    
     if (firstLetter === 'a') {
-        console.log(word[1])
+        return word[1];
     } else if (firstLetter === 'b') {
-        console.log(word[2])
+        return word[2];
     } else if (firstLetter === 'c') {
-        console.log(word[3])
+        return word[3];
     } else if (firstLetter === 'd') {
-        console.log(word[4])
+        return word[4];
     } else {
-        console.log(' ');
+        return ' ';
     }
 }
 
 function decodeSentence(sentence, fn) {
+    let result = "";
     let sentenceArr = sentence.split(" ");
     for (let i = 0; i < sentenceArr.length; i++) {
-        decode(sentenceArr[i]);
-    }
+      const decoded = fn(sentenceArr[i]);
+        result += decoded;
+    } 
+  
+    return result;
 }
 
-decodeSentence('craft block argon meter bells brown croon droop');
+console.log(decodeSentence('craft block argon meter bells brown croon droop', decode));
 
 //  *************  Rock Paper Scissors  *************
 
