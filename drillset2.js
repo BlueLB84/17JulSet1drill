@@ -1,4 +1,4 @@
-// Jedi Name
+//  ************  Jedi Name  ************  
 
 function jediName(firstName, lastName){
     let firstHalf = firstName.slice(0,2);
@@ -8,7 +8,7 @@ function jediName(firstName, lastName){
 
 jediName('Lindsey', 'BarbeeVargas');
 
-// To infinity...
+// **********  To infinity...  ************  
 
 function beyond(num) {
     if (num === Infinity || num === Number.NEGATIVE_INFINITY) {
@@ -28,13 +28,10 @@ function beyond(num) {
 
 beyond(Number.NEGATIVE_INFINITY);
 
-// Cracking the code
-/* I need to take more time understand
-what this example is asking me to do
-in the first place.  I don't understand the 'decoding' scheme */
 
 
-// How many days in a month
+
+// ************  How many days in a month  ************  
 let month = 'March';
 
 switch (month) {
@@ -92,7 +89,7 @@ switch (month) {
 
 
 
-//  *******  Cracking the code  ********
+//  ********  Cracking the code  *********
 
 function decode(word) {
     const firstLetter = word[0];
